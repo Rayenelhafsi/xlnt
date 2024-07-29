@@ -105,6 +105,7 @@ public:
     compound_document_istreambuf(const compound_document_entry &entry, compound_document &document)
         : entry_(entry),
           document_(document),
+	  current_sector_(0),
           sector_writer_(current_sector_),
           position_(0)
     {
@@ -294,7 +295,8 @@ public:
     compound_document_ostreambuf(compound_document_entry &entry, compound_document &document)
         : entry_(entry),
           document_(document),
-          sector_reader_(current_sector_),
+          current_sector_(0),
+	  sector_reader_(current_sector_),
           current_sector_(document.header_.threshold),
           position_(0)
     {

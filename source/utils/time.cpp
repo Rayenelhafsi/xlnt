@@ -1,3 +1,4 @@
+#include <cstdint>
 // Copyright (c) 2014-2021 Thomas Fussell
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy

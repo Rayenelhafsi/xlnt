@@ -1,3 +1,4 @@
+#include <cstdint>
 // Copyright (c) 2016-2020
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
